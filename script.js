@@ -1,4 +1,5 @@
-const apiBaseUrl = "http://localhost:3000"; // Change this if deployed
+// const apiBaseUrl = "http://localhost:3000"; // Change this if deployed
+const apiBaseUrl = "https://beauty-saloon-2.onrender.com";
 
 /** 📌 Load available slots when a user selects a service */
 async function loadService(service) {
