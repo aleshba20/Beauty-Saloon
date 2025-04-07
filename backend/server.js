@@ -9,8 +9,12 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB connection URI and client
-const uri = "mongodb://127.0.0.1:27017";
-const client = new MongoClient(uri);
+// MongoDB connection URI and client
+const uri = process.env.MONGO_URI;
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // Database and collection names
 const dbName = "beauty_salon";
