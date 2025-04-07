@@ -244,6 +244,11 @@ app.post("/book", async (req, res) => {
   });
 });
 
+// Default home route
+app.get("/", (req, res) => {
+  res.send("🚀 Beauty Saloon Backend is running!");
+});
+
 // Handle invalid routes
 app.use((req, res) => {
   res.status(404).send("❌ Route not found");
