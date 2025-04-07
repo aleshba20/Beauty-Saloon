@@ -6,7 +6,12 @@ require("dotenv").config(); // Load .env variables
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 // MongoDB connection URI and client
 // MongoDB connection URI and client
