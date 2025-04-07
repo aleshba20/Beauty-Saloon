@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Llishamua- Makeup & Henna Artist</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo_logo">
+        <img src="images/logo_logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#makeup-pricing">Makeup</a></li>
+          <li><a href="#henna-pricing">Henna</a></li>
+          <li><a href="#newsletter">Contact Us</a></li>
+          <li class="separator">|</li>
+          <li><a href="index.html">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <header class="hero">
+      <h1>Welcome to Llishamua</h1>
+      <p>Where Beauty Begins</p>
+      <div class="image-container">
+        <img src="images/istockphoto-1299106511-612x612.jpg" alt="Service 1" />
+        <img src="images/something.png" alt="Service 2" />
+        <img
+          src="images/photo-1453761816053-ed5ba727b5b7.png"
+          alt="Service 3"
+        />
+      </div>
+      <br />
+      <!-- <button class="learn-more">Learn More</button> -->
+      <br />
+      <br />
+      <br />
+      <br />
+    </header>
+
+    <!-- About us Section -->
+    <section id="about" class="great-things-section">
+      <div class="logo-container">
+        <!-- <img
+          class="justice-for"
+          src="images/e479a766-099e-4bd5-b195-45e5627fd154.png"
+          alt=""
+        /> -->
+      </div>
+
+      <div class="great-things-content">
+        <h2 class="about-heading">ABOUT US</h2>
+
+        <p class="why">
+          I'm Aleshba Ali, a passionate makeup and henna artist. My journey
+          began in 10th grade, experimenting with eyeshadow and false lashes,
+          which sparked my love for beauty. At the same time, I picked up a
+          henna cone and started creating designs on mirrors, cardboard, and my
+          own hands—turning a hobby into a craft. What started as fun soon
+          became a profession. I began applying makeup on friends, then clients,
+          and with the support of my family, I launched my own beauty brand.
+          Over time, my work gained recognition, leading to PR collaborations
+          and my journey as an influencer. Today, I provide professional makeup
+          & henna services while sharing my passion with the world. What began
+          as a small step has become a dream come true—and this is just the
+          beginning. 💄✨ 🚀 Welcome to my world of beauty & creativity!
+        </p>
+      </div>
+      <div class="great-things-image">
+        <br />
+        <img src="images/photo-1630228030850-062003233d10.png" />
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Our Artists -->
+    <section class="artists-section">
+      <div class="logo-containers">
+        <!-- <img
+          class="justice_for"
+          src="images/e479a766-099e-4bd5-b195-45e5627fd154.png"
+          alt=""
+        /> -->
+      </div>
+      <h2 style="font-weight: bold">Meet Our Artists</h2>
+      <div class="artists-container">
+        <div class="artist">
+          <img
+            src="images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+            alt="Artist 1"
+          />
+          <h4>Kate Windsor</h4>
+          <p>Makeup Artist</p>
+        </div>
+        <div class="artist">
+          <img
+            src="images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+            alt="Artist 2"
+          />
+          <h4>Tina Young</h4>
+          <p>Makeup Artist</p>
+        </div>
+        <div class="artist">
+          <img
+            src="images/rafaella-mendes-diniz-et_78QkMMQs-unsplash.jpg"
+            alt="Artist 3"
+          />
+          <h4>Shahira Johnson</h4>
+          <p>Henna Artist</p>
+        </div>
+        <div class="artist">
+          <img
+            src="images/WhatsApp Image 2025-01-25 at 16.15.49_e3ec1f6d.jpg"
+            alt="Artist 4"
+          />
+          <h4>Aleshba Ali</h4>
+          <p>Makeup Artist & Henna Artist</p>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- ✅ Bootstrap Testimonial Carousel -->
+    <div class="testimonial-header">
+      <!-- <img
+        class="justice-for_"
+        src="images/e479a766-099e-4bd5-b195-45e5627fd154.png"
+        alt="Logo"
+      /> -->
+      <h2 class="tira">Testimonials</h2>
+    </div>
+
+    <div class="testimonial-container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <div
+            id="testimonialCarousel"
+            class="testimonial-carousel carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div
+              class="testimonial-inner carousel-inner bg-light text-white p-4 rounded"
+            >
+              <div class="testimonial-item carousel-item active">
+                <p>
+                  "Absolutely loved my makeup! It lasted all day, and I felt so
+                  confident. Highly recommended!"
+                </p>
+                <h4>Ayesha Khan, Doha</h4>
+              </div>
+              <div class="testimonial-item carousel-item">
+                <p>
+                  "The henna design was stunning! The stain was rich and dark,
+                  exactly what I wanted for my wedding!"
+                </p>
+                <h4>Sara Ahmed, Qatar</h4>
+              </div>
+              <div class="testimonial-item carousel-item">
+                <p>
+                  "Aleshba is an amazing artist! My makeup looked flawless, and
+                  the attention to detail was incredible."
+                </p>
+                <h4>Fatima Noor, Dubai</h4>
+              </div>
+              <div class="testimonial-item carousel-item">
+                <p>
+                  "I booked a glam makeup session, and it was PERFECT. Got so
+                  many compliments at my event!"
+                </p>
+                <h4>Hind Al-Mansoori, Abu Dhabi</h4>
+              </div>
+              <div class="testimonial-item carousel-item">
+                <p>
+                  "Professional and super talented! The bridal makeup was beyond
+                  my expectations. Thank you!"
+                </p>
+                <h4>Maha Al Thani, Qatar</h4>
+              </div>
+            </div>
+
+            <!-- ✅ Custom Navigation Buttons -->
+            <button
+              class="testimonial-btn testimonial-prev carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="testimonial-btn testimonial-next carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- ChatBox -->
+
+    <div class="chatbox-container">
+      <div class="chatbox">
+        <div class="chatbox-header">
+          <span>Live Chat</span>
+          <button class="chatbox-close" onclick="toggleChatbox()">✖</button>
+        </div>
+        <div class="chatbox-messages" id="chatbox-messages">
+          <p class="bot-message">Hello! How can I assist you?</p>
+        </div>
+        <div class="chatbox-input">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Type a message..."
+            onkeypress="sendMessage(event)"
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+      <button class="chatbox-toggle" onclick="toggleChatbox()">💬</button>
+    </div>
+
+    <!-- Makeup Pricing Section -->
+    <section id="makeup-pricing" class="pricing-section">
+      <div class="logo-containers">
+        <!-- <img
+          class="justice_for"
+          src="images/e479a766-099e-4bd5-b195-45e5627fd154.png"
+          alt=""
+        /> -->
+      </div>
+      <h2 class="pricing-heading">Makeup Pricing</h2>
+      <p class="pricing-subtext">
+        Check out our exclusive makeup services & prices.
+      </p>
+
+      <div class="pricing-container">
+        <!-- Bridal Makeup -->
+        <div class="pricing-card">
+          <h3>Bridal Makeup</h3>
+          <p class="price">QAR 800</p>
+          <p>Includes full-face glam, lashes, and setting spray.</p>
+          <button class="learn-more-btn" onclick="openPopup('bridal')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Party Makeup -->
+        <div class="pricing-card">
+          <h3>Party Makeup</h3>
+          <p class="price">QAR 400</p>
+          <p>Perfect for parties, soft glam, or bold looks.</p>
+          <button class="learn-more-btn" onclick="openPopup('party')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Engagement Makeup -->
+        <div class="pricing-card">
+          <h3>Engagement Makeup</h3>
+          <p class="price">QAR 600</p>
+          <p>Custom engagement makeup with soft or bold finish.</p>
+          <button class="learn-more-btn" onclick="openPopup('engagement')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Photoshoot Makeup -->
+        <div class="pricing-card">
+          <h3>Photoshoot Makeup</h3>
+          <p class="price">QAR 500</p>
+          <p>Flawless HD makeup for professional shoots.</p>
+          <button class="learn-more-btn" onclick="openPopup('photoshoot')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Casual Makeup -->
+        <div class="pricing-card">
+          <h3>Casual Makeup</h3>
+          <p class="price">QAR 300</p>
+          <p>Soft and natural look for everyday wear.</p>
+          <button class="learn-more-btn" onclick="openPopup('casual')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Eye Makeup Only -->
+        <div class="pricing-card">
+          <h3>Eye Makeup Only</h3>
+          <p class="price">QAR 200</p>
+          <p>Includes eye shadow, liner, lashes, and brows.</p>
+          <button class="learn-more-btn" onclick="openPopup('eye')">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup Modal Structure -->
+    <div id="popup-modal" class="popup">
+      <div class="popup-content">
+        <img id="popup-image" class="popup-img" src="" alt="Service Image" />
+        <button class="close-btn" onclick="closePopup()">✖</button>
+        <h2 id="popup-title"></h2>
+        <p id="popup-description"></p>
+        <p class="discount-text">
+          Members get a <span id="popup-discount"></span> discount! 🎉
+        </p>
+      </div>
+    </div>
+
+    <!-- Henna Pricing Section -->
+    <section id="henna-pricing" class="pricing-section">
+      <div class="logo-containers">
+        <!-- <img
+          class="justice_for"
+          src="images/e479a766-099e-4bd5-b195-45e5627fd154.png"
+          alt=""
+        /> -->
+      </div>
+      <h2 class="pricing-heading">Henna Pricing</h2>
+      <p class="pricing-subtext">Explore our unique henna designs & pricing.</p>
+
+      <div class="pricing-container">
+        <!-- Bridal Henna -->
+        <div class="pricing-card">
+          <h3>Bridal Henna</h3>
+          <p class="price">QAR 700</p>
+          <p>Traditional & modern full-hand bridal henna.</p>
+          <button class="learn-more-btn" onclick="openHennaPopup('bridal')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Party Henna -->
+        <div class="pricing-card">
+          <h3>Party Henna</h3>
+          <p class="price">QAR 350</p>
+          <p>Beautiful floral & intricate patterns for any event.</p>
+          <button class="learn-more-btn" onclick="openHennaPopup('party')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Engagement Henna -->
+        <div class="pricing-card">
+          <h3>Engagement Henna</h3>
+          <p class="price">QAR 500</p>
+          <p>Elegant henna designs for your special occasion.</p>
+          <button class="learn-more-btn" onclick="openHennaPopup('engagement')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Simple Henna -->
+        <div class="pricing-card">
+          <h3>Simple Henna</h3>
+          <p class="price">QAR 200</p>
+          <p>Minimalistic designs for casual or festive looks.</p>
+          <button class="learn-more-btn" onclick="openHennaPopup('simple')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Arabic Henna -->
+        <div class="pricing-card">
+          <h3>Arabic Henna</h3>
+          <p class="price">QAR 400</p>
+          <p>Bold and stylish Arabic-style henna patterns.</p>
+          <button class="learn-more-btn" onclick="openHennaPopup('arabic')">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Henna for Kids -->
+        <div class="pricing-card">
+          <h3>Henna for Kids</h3>
+          <p class="price">QAR 150</p>
+          <p>Fun, small & cute henna designs for children.</p>
+          <button class="learn-more-btn" onclick="openHennaPopup('kids')">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Henna Popup Modal -->
+    <div id="henna-popup-modal" class="popup">
+      <div class="popup-content">
+        <img
+          id="henna-popup-image"
+          class="popup-img"
+          src=""
+          alt="Henna Service Image"
+        />
+        <button class="close-btn" onclick="closeHennaPopup()">✖</button>
+        <h2 id="henna-popup-title"></h2>
+        <p id="henna-popup-description"></p>
+        <p class="discount-text">
+          Members get a <span id="henna-popup-discount"></span> discount! 🎉
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section id="newsletter" class="newsletter-section">
+      <div class="logo-container">
+        <!-- <img
+          class="justice"
+          src="images/e479a766-099e-4bd5-b195-45e5627fd154.png"
+          alt="Company Logo"
+        /> -->
+      </div>
+      <h2>Contact Us</h2>
+      <p>Contact us if you have any inquiries or concerns.</p>
+
+      <form class="newsletter-form" id="contactForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <textarea
+          id="message"
+          placeholder="Your Message"
+          rows="4"
+          required
+          class="custom-textarea"
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p
+        id="responseMessage"
+        style="display: none; color: green; margin-top: 10px"
+      ></p>
+    </section>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+          const responseMessage = document.getElementById("responseMessage");
+
+          try {
+            const response = await fetch("http://localhost:3000/contact", {
+              // Change to your actual backend URL when deployed
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ name, email, message }),
+            });
+
+            const result = await response.text();
+
+            if (response.ok) {
+              responseMessage.style.color = "green";
+              responseMessage.textContent =
+                "✅ Your message has been sent successfully!";
+              document.getElementById("contactForm").reset();
+            } else {
+              responseMessage.style.color = "red";
+              responseMessage.textContent =
+                "❌ Failed to send message. Please try again.";
+            }
+
+            responseMessage.style.display = "block";
+          } catch (error) {
+            responseMessage.style.color = "red";
+            responseMessage.textContent =
+              "❌ An error occurred. Please try again later.";
+            responseMessage.style.display = "block";
+          }
+        });
+    </script>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="images/e479a766-099e-4bd5-b195-45e5627fd154.png"
+            alt="Logo"
+          />
+        </div>
+        <ul class="footer-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#makeup-pricing">Makeup</a></li>
+          <li><a href="#henna-pricing">Henna</a></li>
+          <li><a href="#newsletter">Contact Us</a></li>
+          <li class="separator">|</li>
+          <li><a href="index.html">Book Appointment</a></li>
+        </ul>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/llishamua/?hl=en"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/@llishamua?lang=en"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+        <p class="footer-text">
+          &copy; 2024 LLishamua- Makeup & Henna Artist. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- ✅ Bootstrap JavaScript Bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

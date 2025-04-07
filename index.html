@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Llishamua- Makeup & Henna Artist</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo_logo">
+        <img src="images/logo_logo.png" alt="Logo" />
+      </div>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="home.html#about">About Us</a></li>
+        <li><a href="home.html#makeup-pricing">Makeup</a></li>
+        <li><a href="home.html#henna-pricing">Henna</a></li>
+        <li><a href="home.html#newsletter">Contact Us</a></li>
+        <li class="separator">|</li>
+        <li><a href="index.html">Book Appointment</a></li>
+      </ul>
+    </nav>
+
+    <main class="funky-main">
+      <section id="services" class="funky-service-section">
+        <h2 class="funky-section-heading">Choose a Service</h2>
+        <div class="funky-buttons-group">
+          <button class="funky-button" onclick="loadService('makeup')">
+            Makeup
+          </button>
+          <button class="funky-button" onclick="loadService('henna')">
+            Henna
+          </button>
+        </div>
+      </section>
+      <!-- search bar -->
+      <section id="slots-section" class="funky-slots-section">
+        <h2 class="funky-section-heading-hi">Available Slots</h2>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search Time (e.g., 10:00 AM)"
+          oninput="searchSlots()"
+          class="funky-search-box"
+        />
+        <ul id="slots" class="funky-slot-list"></ul>
+      </section>
+
+      <!-- Booking Form Modal -->
+      <div id="booking-modal" class="booking-modal">
+        <div class="booking-modal-content">
+          <span class="close-booking" onclick="closeBookingModal()">✖</span>
+
+          <form id="booking-form" class="funky-booking-form">
+            <h3 class="funky-form-title">Book Your Slot</h3>
+
+            <input
+              type="text"
+              id="name"
+              class="funky-input"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              class="funky-input"
+              placeholder="Your Email"
+              required
+            />
+            <input
+              type="tel"
+              id="phone"
+              class="funky-input"
+              placeholder="Your Contact Number"
+              required
+            />
+
+            <select id="artist" class="funky-input" required>
+              <option value="" disabled selected>Select Your Artist</option>
+              <option value="Kate Windsor">Kate Windsor</option>
+              <option value="Tina Young">Tina Young</option>
+              <option value="Shahira Johnson">Shahira Johnson</option>
+              <option value="Aleshba Ali">Aleshba Ali</option>
+            </select>
+
+            <input type="date" id="date" class="funky-input" required />
+
+            <button type="submit" class="funky-submit-button">
+              Confirm Booking
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="images/e479a766-099e-4bd5-b195-45e5627fd154.png"
+            alt="Footer Logo"
+          />
+        </div>
+        <ul class="footer-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#makeup-pricing">Makeup</a></li>
+          <li><a href="#henna-pricing">Henna</a></li>
+          <li><a href="#newsletter">Contact Us</a></li>
+          <li class="separator">|</li>
+          <li><a href="index.html">Book Appointment</a></li>
+        </ul>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/llishamua/?hl=en"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/@llishamua?lang=en"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+        <p class="footer-text">
+          &copy; 2024 LLishamua- Makeup & Henna Artist. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

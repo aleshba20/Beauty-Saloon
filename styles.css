@@ -1,0 +1,1563 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fde8e4;
+}
+
+.logo_logo img {
+    width: 250px;  /* Make the image small */
+    height: 120px; /* Keep height consistent */
+    margin-left:50px ;
+}
+
+.justice {
+    width: 200px; /* Keep image size */
+    height: 200px;
+    object-fit: contain; /* Maintain aspect ratio */
+    position: relative; /* Allows movement */
+    top: 20px; /* Moves the image up */
+}
+
+
+
+/* NAVIGATION */
+nav {
+    background-color: #fde8e4;
+    padding: 35px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Space out navigation items */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Increased spacing between items */
+}
+
+/* Navigation links */
+nav ul li a {
+    color: #4a1c1c;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect (changes color) */
+nav ul li a:hover {
+    color: #3a1616;
+}
+
+/* Animated Underline Effect */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #4a1c1c;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Underline appears when hovered or clicked */
+nav ul li a:hover::after, 
+nav ul li a.active::after {
+    width: 100%;
+}
+
+nav ul li.separator {
+    font-size: 2rem; /* Increased size to make it longer */
+    font-weight: normal; /* Removed bold effect */
+    color: #4a1c1c; /* Match the text color */
+    padding: 0 25px; /* Slightly increased spacing */
+    line-height: 1; /* Adjusts height alignment */
+}
+
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #fde8e4; /* Light pink background */
+    background-image: url('images/abstract-pattern.png'); /* Replace with your actual image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* WELCOME TEXT */
+.hero h1 {
+    font-size: 4rem; /* Bigger font size */
+    font-weight: 800; /* Bold text */
+    color: #4a1c1c;
+    margin-bottom: 10px;
+}
+
+/* SUBTEXT (LET'S GET STARTED) */
+.hero p {
+    font-size: 1.8rem; /* Slightly larger for emphasis */
+    color: #4a1c1c;
+    font-weight: 400;
+    letter-spacing: 3px; /* Add spacing for aesthetic */
+}
+
+
+.learn-more {
+    font-size: 20px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 20px;
+    background-color:#4a1c1c;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+/* LOGO ON TOP OF SECTION */
+.logo-container {
+    position: absolute;
+    top: -80px; /* Adjusts the logo slightly above the section */
+    left: 50%;
+    transform: translateX(-50%); /* Centers it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; /* Adds a bit of padding for spacing */
+    background-color: #fde8e4; /* Matches the section background */
+    border-radius: 50%; /* Optional: Makes it circular */
+    z-index: 20; /* Ensures it's above other content */
+}
+
+/* Ensure the logo image resizes correctly */
+.logo-container img {
+    width: 120px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo-containers{
+
+       
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* Ensure it's not restricting */
+    height: auto;
+        
+    }
+    
+    .logo-containers img {
+        width: 120px; /* Adjust size */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .justice_for {
+        width: 150px; /* Increased from 100px */
+        height: 150px; /* Increased from 100px */
+        display: block; /* Ensures proper sizing */
+    }
+    
+    
+
+
+/* GREAT THINGS SECTION */
+
+.great-things-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #4a1c1c;
+    color: white;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    
+}
+
+
+
+
+.about-heading {
+    text-align: center; /* Center the text */
+    font-size: 3rem; /* Adjust size */
+    font-weight: bold;
+    color: white; /* Light Cream color */
+    margin-bottom: 20px; /* Space below */
+    display: block;
+    width: 100%;
+    margin-top: 70px;
+}
+
+/* Fixing Alignment Issues */
+.great-things-content {
+    text-align: center; /* Center the text */
+    max-width: 900px; /* Set max width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 30px; /* Add padding for spacing */
+  
+    border-radius: 10px; /* Soft edges */
+}
+
+/* Add line spacing */
+.great-things-content p {
+    line-height: 1.8; /* Improves readability */
+    font-size: 18px; /* Slightly larger font */
+    color: #FFF5E1; /* Light Cream text for contrast */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .great-things-content {
+        max-width: 80%;
+        padding: 20px;
+    }
+
+    .about-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .great-things-content {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .about-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .great-things-content {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+}
+
+
+/* Image Side - Takes Up Full Right Half */
+.great-things-image {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%; /* Ensure it takes full section height */
+}
+
+/* Make the Image Fill the Right Side */
+.great-things-image img {
+    width: 100%;  /* Make image take full width */
+    height: 100%; /* Make image take full section height */
+    object-fit: cover; /* Ensure image fully covers space */
+}
+
+/* IMAGE CONTAINER */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-container img {
+    height: auto;
+    width: 20%;
+    min-width: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth effect */
+}
+
+/* Hover Effect */
+.image-container img:hover {
+    transform: scale(1.1); /* Enlarges image */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* NEWSLETTER SECTION */
+.newsletter-section {
+    background-color: #fde8e4; /* Soft pink background */
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative; /* Needed for absolute positioning of the logo */
+}
+
+/* LOGO POSITIONING */
+.newsletter-section .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px; /* Space below the logo */
+}
+
+/* Ensure the image fills the container */
+.newsletter-section .logo-container img {
+    width: 120px; /* Take full width of container */
+    height: 80px; /* Take full height of container */
+   
+}
+/* Heading */
+.newsletter-section h2 {
+    font-size: 2.5rem;
+    color: #4a1c1c;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Subtext */
+.newsletter-section p {
+    font-size: 1.2rem;
+    color: #6d4b4b;
+    margin-bottom: 20px;
+}
+
+/* FORM STYLING */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* INPUT FIELDS */
+.newsletter-form input {
+    width: 60%;
+    padding: 12px;
+    border: 2px solid #d4a5a5;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.newsletter-form input:focus {
+    border-color: #4a1c1c;
+}
+
+/* BUTTON */
+.newsletter-form button {
+    background-color: #4a1c1c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.newsletter-form button:hover {
+    background-color: #3a1616;
+}
+
+
+
+
+
+
+
+/* 🔥 SINGLE MEDIA QUERY FOR FULL RESPONSIVENESS */
+@media (max-width: 768px) {
+    /* NAVIGATION */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .learn-more {
+        font-size: 1.2rem;
+        padding: 20px 40px;
+    }
+
+    /* GREAT THINGS SECTION */
+    .great-things-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .great-things-content {
+        font-size: 2rem;
+    }
+
+    .great-things-image img {
+        width: 80%;
+    }
+
+    /* IMAGE CONTAINER */
+    .image-container img {
+        width: 45%;
+        min-width: 200px;
+    }
+
+    /* ABSTRACT ART RESIZING */
+    body::before {
+        width: 200px;
+        height: 200px;
+    }
+
+    @media (max-width: 768px) {
+        body::after {
+            bottom: auto; /* Remove fixed bottom position */
+            left: 0;
+            right: 0;
+            top: 50%; /* Adjust position */
+            transform: translateY(-50%); /* Center it */
+            width: 250px;
+            height: 180px;
+            z-index: -2; /* Moves further back behind .image-container */
+        }
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color: #4a1c1c; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* FOOTER LOGO */
+.footer-logo img {
+    width: 120px; /* Adjust logo size */
+    height: auto;
+}
+
+/* FOOTER LINKS */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #f5a623; /* Highlight on hover */
+}
+
+/* FOOTER SOCIAL MEDIA ICONS */
+/* FOOTER SOCIAL MEDIA ICONS */
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    color: white; /* Makes the icons white */
+    font-size: 30px; /* Adjust icon size */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer-socials a:hover {
+    color: #f5a623; /* Change color on hover (optional) */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* FOOTER COPYRIGHT TEXT */
+.footer-text {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-socials {
+        gap: 10px;
+    }
+}
+
+/* ARTISTS SECTION */
+.artists-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fde8e4; /* Light pink background */
+}
+
+/* Section Heading */
+.artists-section h2 {
+    font-size: 2.5rem;
+    color: #4a1c1c;
+    margin-bottom: 20px;
+}
+
+.artists-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .artist {
+    flex: 1 1 calc(50% - 20px); /* Ensures two artists per row */
+    text-align: center;
+    max-width: 300px;
+  }
+  
+
+
+/* Circular Image Styling */
+.artist img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the images circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Artist Name */
+.artist p {
+    font-size: 1.2rem;
+    color: #4a1c1c;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .artists-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .artist img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Chatbox Container */
+.chatbox-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Chatbox Window */
+.chatbox {
+    display: none;
+    width: 320px;
+    height: 450px;
+    background: #fde8e4; /* Matching your site's light pink */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    border: 3px solid #4a1c1c; /* Border to match your theme */
+}
+
+/* Chatbox Header */
+.chatbox-header {
+    background: #4a1c1c; /* Matching your dark color */
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Close Button */
+.chatbox-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.chatbox-close:hover {
+    color: #f5a623; /* Light highlight on hover */
+}
+
+/* Chatbox Messages */
+.chatbox-messages {
+    height: 320px;
+    padding: 12px;
+    overflow-y: auto;
+    font-size: 15px;
+}
+
+/* User and Bot Messages */
+.user-message {
+    background: #4a1c1c; /* Matching dark color */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    text-align: right;
+    max-width: 75%;
+    align-self: flex-end;
+    display: inline-block;
+}
+
+.bot-message {
+    background: #fff;
+    color: #4a1c1c;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    text-align: left;
+    max-width: 75%;
+    align-self: flex-start;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Chatbox Input */
+.chatbox-input {
+    display: flex;
+    border-top: 2px solid #4a1c1c;
+}
+
+.chatbox-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 0;
+    background-color: #fde8e4;
+    color: #4a1c1c;
+}
+
+.chatbox-input button {
+    background: #4a1c1c;
+    color: white;
+    border: none;
+    padding: 20px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.chatbox-input button:hover {
+    background: #3a1616;
+}
+
+/* Floating Chat Button */
+.chatbox-toggle {
+    background: #4a1c1c; /* Your dark primary color */
+    color: white;
+    font-size: 22px; /* Made the icon larger */
+    padding: 16px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Bigger button */
+    height: 60px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.chatbox-toggle:hover {
+    background: #3a1616; /* Darker for hover effect */
+    transform: scale(1.1);
+}
+
+/* Smoothness */
+
+/* Page Transition (Fade Effect) */
+.page-transition {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page-transition.fade-out {
+    opacity: 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Pricing Section */
+.pricing-section {
+    background-color: #fde8e4; /* Matches website theme */
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Section Heading */
+.pricing-heading {
+    font-size: 2.8rem;
+    color: #4a1c1c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtext */
+.pricing-subtext {
+    font-size: 1.4rem;
+    color: #6d4b4b;
+    margin-bottom: 40px;
+}
+
+/* Pricing Container - 3 Columns by Default */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Card Hover Effect */
+.pricing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Price Heading */
+.pricing-card h3 {
+    font-size: 1.5rem;
+    color: #4a1c1c;
+    margin-bottom: 10px;
+}
+
+/* Price Text */
+.pricing-card .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+/* Card Description */
+.pricing-card p {
+    font-size: 1rem;
+    color: #4a1c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) { /* Medium Screens: Show 2 columns */
+    .pricing-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) { /* Small Screens: Show 1 column */
+    .pricing-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background-color: #4a1c1c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.learn-more-btn:hover {
+    background-color: #3a1616;
+}
+
+/* Popup Modal */
+/* Popup Modal */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    background: white;
+    padding: 25px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: popupFadeIn 0.4s ease-in-out;
+    position: relative; /* Needed for close button */
+}
+
+/* Popup Fade In Animation */
+@keyframes popupFadeIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a1c1c;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+    color: #d9534f;
+}
+
+/* Discount Text */
+.discount-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+    margin-top: 15px;
+}
+
+/* Popup Fade In Animation */
+@keyframes popupFadeIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Center the Slots Section */
+.funky-slots-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Search Bar */
+.funky-search-box {
+    width: 50%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #d4a5a5;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+}
+
+/* Available Slots List */
+.funky-slot-list {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    margin-top: 20px;
+}
+
+/* Slot Item Styling */
+.funky-slot-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    color: #4a1c1c;
+    border-bottom: 1px solid #d4a5a5;
+    background: white;
+}
+
+/* Remove border from last slot */
+.funky-slot-list li:last-child {
+    border-bottom: none;
+}
+
+/* Slot Left Side (Service Name & Details) */
+.funky-slot-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Details Link */
+.funky-details-link {
+    font-size: 0.9rem;
+    color: #a04c4c;
+    text-decoration: none;
+}
+
+/* Price */
+.funky-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4a1c1c;
+}
+
+/* Styled 'Book Now' Button */
+.book-button {
+    background-color: transparent;  /* Transparent background */
+    color: #4a1c1c;                 /* Your theme's dark brown color */
+    border: 2px solid #4a1c1c;      /* Border matches theme */
+    padding: 8px 20px;              /* Adjust padding for button size */
+    font-size: 1rem;                /* Font size for consistency */
+    font-weight: bold;              /* Bold text */
+    border-radius: 20px;            /* Rounded button */
+    cursor: pointer;                /* Pointer cursor on hover */
+    text-transform: uppercase;      /* Makes text uppercase */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.book-button:hover {
+    background-color: #4a1c1c;  /* Button background changes on hover */
+    color: white;               /* Text color changes to white */
+}
+/* ---------------------------- */
+/* HEADER - Hero Section */
+.funky-hero {
+    background-color: #fce8e8; /* Soft pink background */
+    padding: 40px 0; /* Reduced padding for closeness */
+    text-align: center;
+}
+
+.funky-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a1c1c; /* Dark brown text */
+    margin-bottom: 10px; /* Reduced space */
+}
+
+.funky-service-section {
+    background: #5a2a2a; /* Dark brown background */
+    padding: 40px;
+    border-radius: 12px; /* Rounded corners */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 80%; /* Make it smaller */
+    max-width: 600px; /* Limit max width */
+    margin: 20px auto; /* Center it */
+   
+  }
+  
+  
+  .funky-section-heading {
+    color: #fff; /* White text for contrast */
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .funky-section-heading-hi{
+    color: #3a1616;
+  }
+  
+  .funky-buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .funky-button {
+    background: #fff; /* Light buttons for contrast */
+    color: #5a2a2a; /* Dark brown text */
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .funky-button:hover {
+    background: #b35959; /* Lighter red-brown on hover */
+    color: #fff;
+    border: 2px solid #b35959;
+  }
+  
+
+
+/* Responsive - Stack buttons on smaller screens */
+@media (max-width: 600px) {
+    .funky-buttons-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.booking-modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* dimmed background */
+  }
+  
+  .booking-modal-content {
+    background-color: #4e1f1f;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .close-booking {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Optional animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+/* Booking Form - Positioned Below Slot List */
+.funky-booking-form {
+    max-width: 550px; /* Increased width for a larger form */
+    background-color: #4a1c1c; /* Dark brown background */
+    color: #ffffff; /* White text */
+    padding: 40px 40px 40px 40px; /* Added more right-side padding */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    margin: 30px auto; /* Centered horizontally below slots */
+    text-align: center;
+}
+
+/* Form heading */
+.funky-form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 25px; /* Increased spacing */
+    color: #fce8e8; /* Soft pink heading */
+}
+
+/* Input fields */
+.funky-input {
+    width: 100%;
+    padding: 15px; /* More padding inside the input fields */
+    margin: 12px 0;
+    border: 2px solid #d4a5a5; /* Soft pink border */
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fce8e8; /* Soft pink input fields */
+    color: #4a1c1c; /* Dark brown text */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensures consistent width */
+}
+
+/* Change input background on focus */
+.funky-input:focus {
+    background-color: #f8dada; /* Slightly darker pink */
+    border-color: #c47c7c; /* Darker pink border */
+}
+
+/* Dropdown Styling */
+.funky-input select {
+    width: 100%; /* Ensures dropdown width matches input fields */
+    padding: 15px; /* Same padding as inputs */
+    border: 2px solid #d4a5a5; /* Matching border */
+    border-radius: 8px; /* Consistent rounded edges */
+    font-size: 1rem; /* Same font size */
+    background-color: #fce8e8; /* Soft pink background */
+    color: #4a1c1c; /* Dark brown text */
+    appearance: none; /* Removes default browser styles */
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Change dropdown background on focus */
+.funky-input select:focus {
+    background-color: #f8dada;
+    border-color: #c47c7c;
+}
+
+
+/* Submit Button */
+.funky-submit-button {
+    width: 100%;
+    background-color: #d4a5a5; /* Soft pink */
+    color: #4a1c1c; /* Dark brown text */
+    border: none;
+    padding: 16px; /* More padding for a comfortable button */
+    font-size: 1.1rem; /* Slightly larger font */
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.funky-submit-button:hover {
+    background-color: #bf8b8b; /* Slightly darker pink */
+    transform: scale(1.05);
+}
+
+/* Ensure the form appears below the slot list */
+#slots-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 📌 Responsive Adjustments */
+@media (max-width: 768px) {
+    .funky-booking-form {
+      width: 95%; /* Slightly wider on mobile */
+      padding: 20px;
+    }
+  
+    .funky-form-title {
+      font-size: 20px;
+    }
+  
+    .funky-input {
+      font-size: 14px; /* Reduce text size for smaller screens */
+      padding: 10px;
+    }
+  
+    .funky-submit-button {
+      font-size: 16px;
+    }
+  }
+/* -------------------- */
+
+/* styles.css */
+
+/* Make the Carousel Wider */
+.testimonial-carousel {
+    width: 80%; /* Increased width */
+    max-width: 1200px; /* Ensures it doesn't stretch too much on large screens */
+    background: #4A1C1C; /* Dark Brown Background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+    margin: auto; /* Centers the carousel horizontally */
+}
+
+/* Testimonial Items */
+.testimonial-inner {
+    position: relative;
+    min-height: 180px;
+}
+
+.testimonial-item {
+    display: none;
+    font-size: 1.5em; /* Slightly bigger text */
+    color: #4A1C1C; /* Light Cream Text */
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Show Active Testimonial */
+.testimonial-item.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Testimonial Name */
+.testimonial-item h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color:#4A1C1C /* Light Cream Text */
+}
+
+/* Center the logo and text */
+.testimonial-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    text-align: center;
+    margin-bottom: 20px; /* Adds spacing between the logo and the heading */
+}
+
+/* Ensure the logo is properly sized */
+.justice-for_ {
+    width: 120px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Ensures proper horizontal centering */
+}
+
+/* Style the Testimonials Heading */
+.tira {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4A1C1C; /* Dark brown */
+    margin-top: 10px; /* Space below logo */
+}
+
+.why{
+    font-size: 17px;
+    line-height: 1.8; /* Adjust spacing between lines */
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem; /* Adjust size for mobile */
+    }
+}
+
+
+
+
+
+
+/* ✅ Responsive Fixes */
+@media (max-width: 992px) {
+    .justice-for_ {
+        width: 100px; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .justice-for_ {
+        width: 80px; /* Adjust size for mobile */
+    }
+}
+
+
+
+/* ✅ Responsive Fix */
+@media (max-width: 992px) {
+    .testimonial-carousel {
+        width: 90%;
+    }
+
+    .testimonial-btn {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-carousel {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .testimonial-btn {
+        font-size: 1.8em;
+    }
+}
+
+.custom-textarea {
+    width: 100%; /* Full width */
+    max-width: 60%; /* Ensures it matches other input fields */
+    height: 80px; /* Same as input field height */
+    padding: 10px;
+    border: 2px solid #d1a1a1; /* Light border matching inputs */
+    border-radius: 5px;
+    background: #fff; /* Same as input background */
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    outline: none;
+    resize: none; /* Prevent resizing */
+    display: block; /* Ensures it aligns with other inputs */
+    box-sizing: border-box; /* Includes padding in width calculation */
+  }
+  
+  .custom-textarea:focus {
+    border-color: #b35959; /* Match theme color */
+    box-shadow: 0 0 5px rgba(179, 89, 89, 0.3);
+    background: #fff;
+  }
+  
+  /* Adjust for larger message input */
+  .custom-textarea.large {
+    height: 120px; /* Set a fixed height for a message */
+  }
+
+  /* --------------------------- */
+
+  /* ✅ FADE-IN ANIMATION (For Sections) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ✅ SLIDE-IN FROM LEFT ANIMATION */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ✅ SLIDE-IN FROM RIGHT ANIMATION */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ✅ ZOOM-IN ANIMATION */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ✅ ADDING FADE-IN EFFECT TO SECTIONS */
+.funky-service-section, 
+.newsletter-section, 
+.funky-booking-form,
+.pricing-section,
+.artists-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ✅ APPLY SLIDE-IN EFFECT TO HEADINGS */
+h1, h2 {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* ✅ BUTTON ANIMATION */
+.funky-button,
+.funky-submit-button {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ✅ BUTTON HOVER EFFECT */
+.funky-button:hover,
+.funky-submit-button:hover {
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+/* ✅ IMAGE ANIMATION */
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ✅ IMAGE HOVER EFFECT (ZOOM) */
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ NAVIGATION MENU - FADE-IN */
+nav ul li a {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ✅ HERO SECTION - FADE & ZOOM */
+.hero {
+    animation: zoomIn 1.2s ease-in-out;
+}
+
+/* ✅ TESTIMONIAL CAROUSEL - SLIDE */
+.testimonial-carousel {
+    animation: slideInRight 1s ease-in-out;
+}
+
+/* ✅ FOOTER FADE-IN */
+.footer {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ✅ SCROLL ANIMATIONS */
+@media (prefers-reduced-motion: no-preference) {
+    [data-animate] {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+    }
+
+    [data-animate].active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ✅ General Scroll Animation */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+/* ✅ When in viewport, trigger animation */
+[data-animate].active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ✅ Specific Animations */
+[data-animate="fadeIn"] {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-out;
+}
+
+[data-animate="slideInLeft"] {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+[data-animate="slideInRight"] {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+[data-animate="zoomIn"] {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+/* ✅ Make elements visible when in viewport */
+[data-animate].active {
+    opacity: 1;
+    transform: translateX(0) translateY(0) scale(1);
+}
+
+.popup-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  
