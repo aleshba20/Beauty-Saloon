@@ -13,7 +13,7 @@ app.use(
   })
 );
 
-// MongoDB connection URI and client
+
 // MongoDB connection URI and client
 const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri, {

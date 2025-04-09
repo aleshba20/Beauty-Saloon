@@ -489,12 +489,14 @@
           const responseMessage = document.getElementById("responseMessage");
 
           try {
-            const response = await fetch("http://localhost:3000/contact", {
-              // Change to your actual backend URL when deployed
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ name, email, message }),
-            });
+            const response = await fetch(
+              "https://beauty-saloon-2.onrender.com/contact",
+              {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, message }),
+              }
+            );
 
             const result = await response.text();
 
